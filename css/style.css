@@ -15,18 +15,31 @@ header nav li a:hover{color: ##331a00;}
 }
 
 /*hero*/
-.hero{background-image: url("../img/hero-coffee.jpg"); background-size: cover; min-height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center; flex-direction: column;}
+.hero{background-image: url("../img/coffee-notebook.jpg"); background-size: cover; min-height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center; flex-direction: column;}
 .hero .grid{background-color: #66432D; opacity: 0.8;}
 .hero h1{color:#fff; font-size: 3.2em;}
 .hero h3{color:#1a1a1a; font-size: 1.5em; margin: 20px;}
 .hero .btn{background-color: #fff; color: #333333; font-size: 0.9em; padding: 10px 10px; border-radius: 4px; text-transform: uppercase; opacity: 0.8;}
 @media(max-width: 700px){
-  .hero img{}
+  .hero{min-height: 100vh}
 }
 
 .company{width: 100%; background-color: #036564; padding: 40px 0px; display: flex; flex-direction: column; align-items: center;}
 .company h1{color: #fff; font-size: 2em; margin-bottom: 15px;}
-.company a{color: #fff; font-size: 1.2em;  margin-bottom: 30px;}
+.company h3{color:#1a1a1a; font-size: 1.5em; margin: 20px;}
+
+.contact-message{background-image: url("../img/coffee-contact.jpg"); background-size: cover; min-height: 80vh; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.contact-message h1{color:#fff; font-size: 2.5em;}
+.contact-message h1,h3,a{text-align: center; color: #1a1a1a; margin-top: 10px; margin-bottom: 5px;}
+.contact-message label{color: #fff; font-size: 1em; margin-top: 15px;}
+.contact-message input, textarea{align-items: center; width: 500px; border: 1px solid #66432D;}
+.contact-message button{background-color: #fff; color: #333333; width: 250px; font-size: 0.9em; margin: 20px; padding: 10px 10px; border-radius: 4px; opacity: 0.8;}
+.contact-message button:hover{background-color: #66432D; color: #fff;}
+@media(max-width:700px){
+  .contact-message{min-height: 60vh;}
+  .contact-message a{font-weight:600;}
+
+}
 
 .footer{width: 100%; background-color: #110b09; padding: 40px 50px; display: flex; justify-content: space-around;}
 .footer li img{width: 150px;}
