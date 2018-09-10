@@ -3,15 +3,19 @@ nav, ul{list-style-type: none;}
 a{text-decoration: none;}
 
 /*header*/
-header{width: 100%; background-color: #fff; position: absolute; top: 0; left: 0; display: flex; justify-content: space-between; align-items:center; padding: 20px 50px;opacity: 0.8;}
-header img{width: 300px;}
-header nav{display: flex;}
-header nav li{margin: 0 20px; text-align: center;}
-header nav li:last-child{margin-right: 0px;}
-header nav li a{color: #66432D; font-size: 1.1rem;}
-header nav li a:hover{color: ##331a00;}
-@media(max-width: 700px){
-  header{flex-direction: column;}
+header{width: 100%; background-color: #fff; position: absolute; top: 0; left: 0; display: flex; justify-content: space-between; align-items:center; padding: 20px 25px;opacity: 0.8;}
+header .logo{width: 300px;}
+header .toogle{padding: 10px 20px; text-align: right; color: #66432D; font-size: 30px; display: none;}
+header ul li{display: inline; margin: 0 20px; text-align: center;}
+header ul li:last-child{margin-right: 0px;}
+header ul li a{color: #66432D; font-size: 1.1rem;}
+header ul li a:hover{color: #331a00;}
+
+@media(max-width: 910px){
+  header {position: relative; flex-direction: row;}
+  header .toogle{display: block;}
+  header ul{width: 100%;display: none;}
+  header ul li{padding: 20px; display: block; box-sizing: border-box;}
 }
 
 /*hero*/
@@ -33,6 +37,9 @@ header nav li a:hover{color: ##331a00;}
 .company .grid{display: flex; flex-wrap: wrap; padding: 20px; align-items: center;}
 .company .grid li{margin-right: 30px;}
 .company .grid li img{border-radius: 10px; opacity: 0.8;}
+@media(max-width: 910px){
+  .company .grid li img{flex-basis: 2%;}
+}
 
 /*products*/
 .products{background-color: #736A66; display: flex; flex-flow: column wrap; text-align: center;}
@@ -50,7 +57,7 @@ header nav li a:hover{color: ##331a00;}
 .contact-message h1{color:#fff; font-size: 2.5em;}
 .contact-message h1,h3,a{text-align: center; color: #1a1a1a; margin-top: 10px; margin-bottom: 5px;}
 .contact-message label{color: #fff; font-size: 1em; margin-top: 15px;}
-.contact-message input, textarea{align-items: center; width: 500px; }
+.contact-message input, textarea{align-items: center; width: 300px; }
 .contact-message button{background-color: #fff; color: #333333; width: 250px; font-size: 0.9em; margin: 20px; padding: 10px 10px; border-radius: 4px; opacity: 0.8;}
 .contact-message button:hover{background-color: #66432D; color: #fff;}
 @media(max-width:700px){
@@ -63,3 +70,7 @@ header nav li a:hover{color: ##331a00;}
 .footer li img{width: 150px;}
 .footer i{margin-right: 10px; font-size: 1.5em; }
 .footer a{color: #fff; font-size: 1em;}
+
+.active{
+  display:block;
+}
