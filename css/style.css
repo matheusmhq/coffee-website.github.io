@@ -3,18 +3,20 @@ nav, ul{list-style-type: none;}
 a{text-decoration: none;}
 
 /*header*/
-header{width: 100%; background-color: #fff; position: absolute; top: 0; left: 0; justify-content: space-between; align-items:center; display: flex; padding: 20px 25px;opacity: 0.8;}
-header .logo{width: 300px;}
+header{width: 100%; background-color: #fff; position: absolute; top: 0; left: 0; display: flex;  justify-content: space-between; align-items:center;  padding: 20px 25px;opacity: 0.8;}
+header .logo{width: 200px;}
 header .toogle{display: none;}
-header ul li{display: inline; margin: 0 20px; text-align: center;}
+header ul li{ display: inline; margin: 0 20px; text-align: center;}
 header ul li:last-child{margin-right: 0px;}
 header ul li a{color: #66432D; font-size: 1.1rem;}
-header ul li a:hover{color: #331a00;}
+header ul li:hover{color: #331a00;}
 
 @media(max-width: 910px){
-  header {position: relative;flex-direction: column;}
-  header .toogle{padding: 10px 20px; text-align: right; color: #66432D; font-size: 30px; display: block;}
-  header ul{width: 100%; display: block;}
+  header {position: relative; display: flex; flex-direction: column; justify-content: space-between;}
+  header .top{display: flex; flex-direction: row; justify-content: space-between;}
+  header .logo{border: 1px solid;}
+  header .toogle{border: 1px solid; text-align: right; color: #66432D; font-size: 30px; display: block;}
+  header nav{width: 100%; display: flex; flex-direction: column; display: block;}
   header ul li{width: 100%; padding: 20px; display: block; border: 0.1px solid #333333; box-sizing: border-box;}
 }
 
